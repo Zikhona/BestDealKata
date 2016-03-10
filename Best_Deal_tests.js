@@ -1,9 +1,8 @@
- QUnit.test( "convert the string into an array", function( assert ) {
-
-     var cheapestString = findCheap("1 for R3, 2 for R7, 3 for R10, 5 for R14.50")
-
-     assert.equal( "newArray", cheapestString);
- });
+ 
+QUnit.test("convertStringintoArray",function(assert) {
+var cheapestString = findCheap("1 for R3, 2 for R7, 3 for R10, 5 for R14.50.");
+assert.deepEqual(cheapestString, ["1 for R3", "2 for R7", "3 for R10", "5 for R14.50."]);
+});
 
 
 
